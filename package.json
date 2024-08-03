@@ -1,0 +1,32 @@
+{
+  "name": "chess-fen-validator",
+  "version": "0.0.1",
+  "description": "A simple package for validating Chess games (fen strings)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-mcdonald/chess-fen-validator.git"
+  },
+  "keywords": [
+    "chess",
+    "fen"
+  ],
+  "author": "s-mcdonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s-mcdonald/chess-fen-validator/issues"
+  },
+  "homepage": "https://github.com/s-mcdonald/chess-fen-validator#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.25.3",
+    "babel-jest": "^29.7.0",
+    "jstest": "^1.0.5",
+    "ts-jest": "^29.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
