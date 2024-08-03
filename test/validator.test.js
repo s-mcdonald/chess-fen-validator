@@ -13,5 +13,5 @@ test("Missing castling rights token", () => {
     const firstValidationError = results[0];
 
     expect(results.length).toEqual(1);
-    expect(firstValidationError.message).toEqual("There are 6 pieces to a Fen String: Found 5");
+    expect(firstValidationError.getMessage()).toEqual("There are 6 pieces to a Fen String: Found 5");
 });
