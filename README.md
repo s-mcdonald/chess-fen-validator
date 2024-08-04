@@ -9,7 +9,7 @@ The piece placement is determined rank-by-rank, starting at rank 8 and proceedin
 
 ## Usage
 ```js
-import { fenValidator } from "chess-fen-validator";
+let { fenValidator } = require("chess-fen-validator");
 
 // Will return empty array if no violations or ValidationError[]
 fenValidator.validate("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b KQkq - 0 1")

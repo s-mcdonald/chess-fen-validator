@@ -175,4 +175,4 @@ String.prototype.isValidFen = function () {
     return fenValidator.validate(this).length === 0;
 }
 
-exports.fenValidator = fenValidator;
+module.exports.fenValidator =  fenValidator;
