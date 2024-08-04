@@ -11,38 +11,16 @@ The piece placement is determined rank-by-rank, starting at rank 8 and proceedin
 ```js
 import { fenValidator } from "chess-fen-validator";
 
-fenValidator.validate("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b KQkq - 0 1")
-
-```
-
-
-
-## Alternate Usage
-```js
-import FenValidator from "../src/FenValidator";
-
-const fenValidator = new FenValidator();
-
-fenValidator.validate("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b KQkq - 0 1")
-
 // Will return empty array if no violations or ValidationError[]
-```
-
-
-## String.prototype
-Or you can use the built-in prototype function.
-```js
-require("../src/FenStringValidatorPrototype");
+fenValidator.validate("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b KQkq - 0 1")
 
 "rnbqkbnr/pqpppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1".isValidFen() // return bool
+
 ```
-
-
 
 
 ## Example
 ```js
-const fenValidator = new FenValidator();
 
 if (fenValidator.validate(fenStrnig).length > 0) {
     // we have a violation
