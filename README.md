@@ -6,6 +6,7 @@ FEN standards for "Forsyth–Edwards Notation".
 FEN describes a Chess Position with a one-line ASCII string. 
 The piece placement is determined rank-by-rank, starting at rank 8 and proceeding down to rank 1.
 
+
 ## Usage
 ```js
 import { fenValidator } from "chess-fen-validator";

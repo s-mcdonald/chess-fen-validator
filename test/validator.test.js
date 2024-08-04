@@ -1,9 +1,7 @@
 "use strict";
 
-import FenValidator from "../src/FenValidator";
-require("../src/FenStringValidatorPrototype");
+import { fenValidator } from "../index.js";
 
-const fenValidator = new FenValidator();
 
 test("Has no validation errors on standard open fen", () => {
     expect(fenValidator.validate("rnbqkbnr/pqpppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1")).toEqual([]);
